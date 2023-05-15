@@ -3,7 +3,7 @@
 This is an example of [Sendbird ChatGPT](https://sendbird.com/docs/chat/v3/platform-api/bot/bot-overview#1-overview) for iOS, implemented using [Sendbird UIKit](https://sendbird.com/docs/uikit/v3/ios/overview).
 
 <p>
-Sendbird ChatGPT: Sendbird ChatGPT is a Sendbird Chat integration into your existing ChatGPT bot can provide customers with a more engaging and personalized conversation experience.
+Sendbird ChatGPT Bot is a GPT3-powered bot that's built on top of Sendbird's existing bots. It can provide your users with highly engaging and natural conversational experience. It's integrated natively inside Sendbird so that you don't have to worry about developing and deploying OpenAI services separately.
 </p>
 
 <p align="center">
