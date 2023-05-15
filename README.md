@@ -17,6 +17,13 @@ Sendbird ChatGPT: Sendbird ChatGPT is a Sendbird Chat integration into your exis
   />
 </p>
 
+## Requirements
+The minimum requirements for this sample are:
+
+- iOS 14.0 +
+- Xcode 14.1 + (Swift 5.7.1 +)
+- Sendbird UIKit 3.5.6
+
 ## Getting Started
 1. Create your Sendbird application on [the dashboard](https://dashboard.sendbird.com/auth/signup).
 2. [Register the ChatGPT bot](https://sendbird.com/developer/tutorials/chatbot-google-dialogflow) in your Sendbird application.
@@ -69,7 +76,7 @@ Currently, Only 1:1 chat with ChatGPT bot is supoorted.When you create a channel
 createChannelViewModel?.createChannel(userIds: [ChatBot.chatGPT.botID])
 ```
 
-For more information, see [our documentation](https://sendbird.com/docs/chat/v3/platform-api/bot/bot-overview#1-overview).
+For more information, see [our documentation](https://sendbird.com/docs/chat/v3/platform-api/bot/bot-overview#1-overview) and [our tutorial](https://sendbird.com/developer/tutorials/chatgpt-integration-build-a-chatgpt-powered-chatbot-part-1).
 
 ## Implementation
 
