@@ -8,6 +8,10 @@
 import UIKit
 import SendbirdUIKit
 
+/// ```swift
+/// SBUViewControllerSet.UserListViewController = ChatGPTUserListViewController.self
+/// ```
+/// Refer to ``AppDelegate/updateViewControllerSet()``
 class ChatGPTUserListViewController: SBUUserListViewController {
     override func viewDidLoad() {
         super.viewDidLoad()

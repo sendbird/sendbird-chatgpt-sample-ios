@@ -8,6 +8,10 @@
 import UIKit
 import SendbirdUIKit
 
+/// ```swift
+/// SBUViewControllerSet.GroupChannelSettingsViewController = ChatGPTChannelSettingsViewController.self
+/// ```
+/// Refer to ``AppDelegate/updateViewControllerSet()``
 class ChatGPTChannelSettingsViewController: SBUGroupChannelSettingsViewController {
     override func showMemberList() {
         guard let channel = self.channel else { return }

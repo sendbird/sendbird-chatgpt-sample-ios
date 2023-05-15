@@ -80,38 +80,35 @@ class BotTypeSelector: SBUCreateChannelTypeSelector {
         self.botSelectorDelegate?.botTypeSelector(self, didSelectBot: .chatGPT)
     }
 
-    @objc func onTapWittyBot() {
-        botSelectorDelegate?.botTypeSelector(self, didSelectBot: .witty)
+    @objc
+    func onTapWittyBot() {
+        self.botSelectorDelegate?.botTypeSelector(self, didSelectBot: .witty)
     }
 
-    @objc func onTapKnowledgeBot() {
-        botSelectorDelegate?.botTypeSelector(self, didSelectBot: .knowledge)
+    @objc
+    func onTapKnowledgeBot() {
+        self.botSelectorDelegate?.botTypeSelector(self, didSelectBot: .knowledge)
     }
 
 
     func createButton(botType: ChatBot) -> SBULayoutableButton {
         let button = SBULayoutableButton(gap: 4, labelAlignment: .under)
-//        let tintColor = theme.channelTypeSelectorItemTintColor
+        button.setTitle(botType.name, for: .normal)
+        button.setImage(UIImage(named: botType.imageName), for: .normal)
         switch botType {
         case .chatGPT:
-            button.setTitle("GPT Bot", for: .normal)
-            button.setImage(UIImage(named: "bot"), for: .normal)
             button.addTarget(
                 self,
                 action: #selector(onTapChatGPTBot),
                 for: .touchUpInside
             )
         case .witty:
-            button.setTitle("Witty Bot", for: .normal)
-            button.setImage(UIImage(named: "bot"), for: .normal)
             button.addTarget(
                 self,
                 action: #selector(onTapWittyBot),
                 for: .touchUpInside
             )
         case .knowledge:
-            button.setTitle("Knowledge Bot", for: .normal)
-            button.setImage(UIImage(named: "bot"), for: .normal)
             button.addTarget(
                 self,
                 action: #selector(onTapKnowledgeBot),
@@ -128,11 +125,7 @@ class BotTypeSelector: SBUCreateChannelTypeSelector {
 
     func updateButton(botType: ChatBot) {
         guard let button = self.viewWithTag(botType.rawValue + 10) as? UIButton else { return }
-        let tintColor = theme.channelTypeSelectorItemTintColor
-        switch botType {
-        default: button.setImage(UIImage(named: "bot"), for: .normal)
-        }
-
+        button.setImage(UIImage(named: botType.imageName), for: .normal)
         button.setTitleColor(theme.channelTypeSelectorItemTextColor, for: .normal)
         button.backgroundColor = self.theme.backgroundColor
     }

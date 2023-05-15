@@ -13,6 +13,7 @@ import SendbirdChatSDK
 /// ```swift
 /// SBUViewControllerSet.GroupChannelListViewController = ChatGPTChannelListViewController.self
 /// ```
+/// Refer to ``AppDelegate/updateViewControllerSet()``
 class ChatGPTChannelListViewController: SBUGroupChannelListViewController, BotTypeSelectorDelegate, SBUCreateChannelViewModelDelegate {
     var createChannelViewModel: SBUCreateChannelViewModel?
     

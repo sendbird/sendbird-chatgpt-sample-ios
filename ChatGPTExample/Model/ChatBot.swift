@@ -22,4 +22,19 @@ enum ChatBot: Int, CaseIterable {
             return "gpt_bot3"
         }
     }
+    
+    var name: String {
+        switch self {
+        case .chatGPT:
+            return "GPT Bot"
+        case .witty:
+            return "Witty Bot"
+        case .knowledge:
+            return "Knowledge Bot"
+        }
+    }
+    
+    var imageName: String {
+        "bot"
+    }
 }
