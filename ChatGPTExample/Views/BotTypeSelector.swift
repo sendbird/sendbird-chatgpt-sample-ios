@@ -9,8 +9,8 @@ import UIKit
 import SendbirdUIKit
 
 /// Please refer to ``ChatGPTChannelListViewController/botTypeSelector(_:didSelect:)``
-protocol BotTypeSelectorDelegate: SBUCreateChannelTypeSelectorDelegate {
-    func botTypeSelector(_ botTypeSelect: BotTypeSelector, didSelect bot: ChatBot)
+protocol BotTypeSelectorDelegate: AnyObject {
+    func botTypeSelector(_ botTypeSelect: BotTypeSelector, didSelectBot bot: ChatBot)
 }
 
 /// Please refer to ``ChatGPTChannelListViewController/loadChannelTypeSelector()``
@@ -77,15 +77,15 @@ class BotTypeSelector: SBUCreateChannelTypeSelector {
 
     @objc
     func onTapChatGPTBot() {
-        self.botSelectorDelegate?.botTypeSelector(self, didSelect: .chatGPT)
+        self.botSelectorDelegate?.botTypeSelector(self, didSelectBot: .chatGPT)
     }
 
     @objc func onTapWittyBot() {
-        botSelectorDelegate?.botTypeSelector(self, didSelect: .witty)
+        botSelectorDelegate?.botTypeSelector(self, didSelectBot: .witty)
     }
 
     @objc func onTapKnowledgeBot() {
-        botSelectorDelegate?.botTypeSelector(self, didSelect: .knowledge)
+        botSelectorDelegate?.botTypeSelector(self, didSelectBot: .knowledge)
     }
 
 

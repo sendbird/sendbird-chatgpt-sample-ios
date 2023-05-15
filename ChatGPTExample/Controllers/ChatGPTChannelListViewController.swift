@@ -33,10 +33,9 @@ class ChatGPTChannelListViewController: SBUGroupChannelListViewController, BotTy
         self.navigationController?.view.addSubview(createChannelTypeSelector)
     }
     
-    func botTypeSelector(_ botTypeSelect: BotTypeSelector, didSelect bot: ChatBot) {
+    func botTypeSelector(_ botTypeSelect: BotTypeSelector, didSelectBot bot: ChatBot) {
         botTypeSelect.dismiss()
         createChannelViewModel?.createChannel(userIds: [bot.botID])
-
     }
     
     override func baseChannelListModule(_ headerComponent: SBUBaseChannelListModule.Header, didTapRightItem rightItem: UIBarButtonItem) {
