@@ -1,5 +1,5 @@
 //
-//  ChatBotChannelSettingModule.List.swift
+//  ChatGPTChannelSettingModule.List.swift
 //  ChatGPTExample
 //
 //  Created by Jaesung Lee on 2023/05/12.
@@ -8,7 +8,7 @@
 import UIKit
 import SendbirdUIKit
 
-class ChatBotChannelSettingModuleList: SBUGroupChannelSettingsModule.List {
+class ChatGPTChannelSettingModuleList: SBUGroupChannelSettingsModule.List {
     override func setupItems() {
         let notificationsItem = self.createNotificationItem()
         let membersItem = self.createMembersItem()

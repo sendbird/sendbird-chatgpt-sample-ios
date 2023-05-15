@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A91C7D402A11F7CE007A9F95 /* ChatGPTChannelModule.List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C7D3F2A11F7CE007A9F95 /* ChatGPTChannelModule.List.swift */; };
 		A95A99BC2A0DDF440080F37C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A99BB2A0DDF440080F37C /* AppDelegate.swift */; };
 		A95A99C32A0DDF440080F37C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95A99C12A0DDF440080F37C /* Main.storyboard */; };
 		A95A99C52A0DDF460080F37C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95A99C42A0DDF460080F37C /* Assets.xcassets */; };
@@ -15,7 +16,7 @@
 		A95A99D32A0DE57A0080F37C /* BotTypeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A99D22A0DE57A0080F37C /* BotTypeSelector.swift */; };
 		A95A99D52A0DFB960080F37C /* ChatGPTChannelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A99D42A0DFB960080F37C /* ChatGPTChannelListViewController.swift */; };
 		A95A99DB2A0E33680080F37C /* ChatBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A99DA2A0E33680080F37C /* ChatBot.swift */; };
-		A95A99DE2A0E34000080F37C /* ChatBotChannelSettingModule.List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A99DD2A0E34000080F37C /* ChatBotChannelSettingModule.List.swift */; };
+		A95A99DE2A0E34000080F37C /* ChatGPTChannelSettingModule.List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A99DD2A0E34000080F37C /* ChatGPTChannelSettingModule.List.swift */; };
 		A95A99E02A0E354E0080F37C /* ChatGPTChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A99DF2A0E354E0080F37C /* ChatGPTChannelViewController.swift */; };
 		A95A99E22A0E37820080F37C /* ChatGPTUserListModule.List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A99E12A0E37820080F37C /* ChatGPTUserListModule.List.swift */; };
 		A95A99E42A0E38550080F37C /* ChatGPTChannelSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A99E32A0E38550080F37C /* ChatGPTChannelSettingsViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A91C7D3F2A11F7CE007A9F95 /* ChatGPTChannelModule.List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTChannelModule.List.swift; sourceTree = "<group>"; };
 		A95A99B82A0DDF440080F37C /* ChatGPTExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95A99BB2A0DDF440080F37C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A95A99C22A0DDF440080F37C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,7 +34,7 @@
 		A95A99D22A0DE57A0080F37C /* BotTypeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotTypeSelector.swift; sourceTree = "<group>"; };
 		A95A99D42A0DFB960080F37C /* ChatGPTChannelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTChannelListViewController.swift; sourceTree = "<group>"; };
 		A95A99DA2A0E33680080F37C /* ChatBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBot.swift; sourceTree = "<group>"; };
-		A95A99DD2A0E34000080F37C /* ChatBotChannelSettingModule.List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotChannelSettingModule.List.swift; sourceTree = "<group>"; };
+		A95A99DD2A0E34000080F37C /* ChatGPTChannelSettingModule.List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTChannelSettingModule.List.swift; sourceTree = "<group>"; };
 		A95A99DF2A0E354E0080F37C /* ChatGPTChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTChannelViewController.swift; sourceTree = "<group>"; };
 		A95A99E12A0E37820080F37C /* ChatGPTUserListModule.List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTUserListModule.List.swift; sourceTree = "<group>"; };
 		A95A99E32A0E38550080F37C /* ChatGPTChannelSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTChannelSettingsViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +100,8 @@
 			children = (
 				A95A99D22A0DE57A0080F37C /* BotTypeSelector.swift */,
 				A95A99E12A0E37820080F37C /* ChatGPTUserListModule.List.swift */,
-				A95A99DD2A0E34000080F37C /* ChatBotChannelSettingModule.List.swift */,
+				A95A99DD2A0E34000080F37C /* ChatGPTChannelSettingModule.List.swift */,
+				A91C7D3F2A11F7CE007A9F95 /* ChatGPTChannelModule.List.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,7 +198,8 @@
 				A95A99E22A0E37820080F37C /* ChatGPTUserListModule.List.swift in Sources */,
 				A95A99BC2A0DDF440080F37C /* AppDelegate.swift in Sources */,
 				A95A99DB2A0E33680080F37C /* ChatBot.swift in Sources */,
-				A95A99DE2A0E34000080F37C /* ChatBotChannelSettingModule.List.swift in Sources */,
+				A91C7D402A11F7CE007A9F95 /* ChatGPTChannelModule.List.swift in Sources */,
+				A95A99DE2A0E34000080F37C /* ChatGPTChannelSettingModule.List.swift in Sources */,
 				A95A99E62A0E39040080F37C /* ChatGPTUserListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,7 +13,12 @@ class ChatGPTChannelViewController: SBUGroupChannelViewController {
         guard let channel = self.channel else { return }
         
         let channelSettingsVC = SBUViewControllerSet.GroupChannelSettingsViewController.init(channel: channel)
-        channelSettingsVC.listComponent = ChatBotChannelSettingModuleList()
+        channelSettingsVC.listComponent = ChatGPTChannelSettingModuleList()
         self.navigationController?.pushViewController(channelSettingsVC, animated: true)
+    }
+    
+    override func loadView() {
+        self.listComponent = ChatGPTChannelModuleList()
+        super.loadView()
     }
 }

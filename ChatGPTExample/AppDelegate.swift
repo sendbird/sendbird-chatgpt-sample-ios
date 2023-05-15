@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // MARK: Customizations
         self.updateViewControllerSet()
         self.updateStringSet()
+        self.updateTheme()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let viewController = SBUViewControllerSet.GroupChannelListViewController.init()
@@ -41,6 +42,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func updateStringSet() {
         SBUStringSet.CreateChannel_Header_Title = "Channel type"
+    }
+    
+    func updateTheme() {
+        let messageCellTheme = SBUMessageCellTheme(
+            leftBackgroundColor: SBUColorSet.background50,
+            leftPressedBackgroundColor: SBUColorSet.background100
+        )
+        SBUTheme.messageCellTheme = messageCellTheme
     }
     
     func applicationDidBecomeActive(_ application: UIApplication) {

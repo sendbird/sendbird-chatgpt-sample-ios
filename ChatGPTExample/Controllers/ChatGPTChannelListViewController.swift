@@ -43,7 +43,6 @@ class ChatGPTChannelListViewController: SBUGroupChannelListViewController, BotTy
         self.showCreateChannelTypeSelector()
     }
     
-    
     // MARK: Create Channel
     func createChannelViewModel(_ viewModel: SBUCreateChannelViewModel, didCreateChannel channel: BaseChannel?, withMessageListParams messageListParams: MessageListParams?) {
         guard let channelURL = channel?.channelURL else { return }
