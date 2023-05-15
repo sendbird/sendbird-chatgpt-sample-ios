@@ -93,10 +93,10 @@ protocol BotTypeSelectorDelegate: AnyObject {
     func botTypeSelector(_ botTypeSelect: BotTypeSelector, didSelectBot bot: ChatBot)
 }
 ```
-1. Override `SBUCreateChannelTypeSelector` to use same design.
-2. Define protocol called `BotTypeSelectorDelegate` as event delegate
-3. Declare delegate property as weak referenced.
-4. Call delegate method when the bot button selected.
+1. Override `SBUCreateChannelTypeSelector` to use the same design.
+2. Define protocol called `BotTypeSelectorDelegate` as an event delegate
+3. Declare delegate property as a weak reference.
+4. Call `botTypeSelector(_:didSelectBot:)` delegate method when the bot button selected.
 
 ### Channel list - SBUCreateChannelViewModel
 ```swift
