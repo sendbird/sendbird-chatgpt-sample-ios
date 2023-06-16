@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sendbird-chatgpt-sample-ios
+  descritpion: This is a public repository for ChatGPT sample in iOS
+  annotations:
+    github.com/project-slug: sendbird/sendbird-chatgpt-sample-ios
+spec:
+  type: sample
+  lifecycle: production
+  owner: dep-client-platform
+  system: sendbird-uikit
