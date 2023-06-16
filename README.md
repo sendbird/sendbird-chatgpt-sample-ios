@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // TODO: Replace with your own APP_ID
-        SendbirdUI.initialize(applicationId: "13B6D179-33A5-4C0D-9162-E11DAC9358FC") { error in
+        SendbirdUI.initialize(applicationId: "BDD627AC-AC88-45F4-B277-2B3B5C4610E3") { error in
             //
         }
         
